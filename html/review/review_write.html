@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="/static/js/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/static/js/review.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/review.css">
+
+    <title>Sentir L'odeur</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="row my-5 py-5">
+                    <div class="col-8 offset-2 align-middle">
+                        <h1 class="text-center">REVIEW</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="제목을 입력해주세요">
+                                                <label for="floatingInput">제목</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="내용을 입력해주세요"
+                                                    id="floatingTextarea" style="height: 500px;"></textarea>
+                                                <label for="floatingTextarea">내용</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-secondary" id="btn_write">작성</button>
+                            <a class="btn btn-outline-secondary" href="review.html" role="button">목록</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
