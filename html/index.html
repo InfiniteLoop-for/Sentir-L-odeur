@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--바로 아래 스크립트 추가함(희정)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../jquery/jquery.bxslider.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <link type="text/css" rel="stylesheet" href="../css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../css/main.css">
+
+    <!--jquery 구버전 사용-->
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="../js/header.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <title>Sentir L'odeur</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--헤더시작-->
+        <div id="header">
+            <!--제목위 빈여백 div-->
+            <div class="row" id="blank_top">
+                <div class="col-12"></div>
+            </div>
+            <!--로고, 네비게이션, 아이콘 div-->
+            <div class="row" id="header_title">
+                <!--로고-->
+                <div class="col-4" id="logo">
+                    <a href="./index.html">
+                        <h1>Sentir L'odeur</h1>
+                    </a>
+                </div>
+                <!--네비메뉴 3가지-->
+                <div class="col-4" id="header_nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item" id="nav1">
+                            <a class="nav-link" href="#">Perfume</a>
+                            <ul class="nav_hide">
+                                <li>
+                                    <a href="./goods/man_perfume.html" id="man_c">Man</a>
+                                </li>
+                                <li>
+                                    <a href="./goods/woman_perfume.html" id="woman_c">Woman</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./board/review.html">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./board/event.html">Event</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4" id="header_icon">
+                    <ul>
+                        <li class="icon1">
+                            <a href="./sign/signin.html" class="icon_margin">
+                                <img src="../img/icon/header_login_icon.png" alt="로그인이미지">
+                            </a>
+                            <h5>login</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="./sign/my_page.html" class="icon_margin">
+                                <img src="../img/icon/header_mypage_icon.png" alt="마이페이지 이미지">
+                            </a>
+                            <h5>mypage</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="./sign/cart.html" class="icon_margin">
+                                <img src="../img/icon/header_cart_icon.png" alt="장바구니 이미지">
+                            </a>
+                            <h5>cart</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--여기까지 헤더-->
+        <!--첫페이지 메인시작 이미지-->
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="goods/woman_perfume.html">
+                            <img src="../img/slide/slide_woman_01.jpg" class="d-block w-100" alt="슬라이드 1번이미지">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="goods/man_perfume.html">
+                            <img src="../img/slide/slide_man_01.jpg" class="d-block w-100" alt="슬라이드 2번이미지">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--메인 향수 글귀-->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id="main_phrase">
+                <p>"향수는 새 드레스와 같아서 당신을 아주 멋지게 만듭니다." - 에스티 로더<br>
+                    "Perfume is like a new dress, it makes you quite simply marvelous." - Estee Lauder
+                </p>
+                <br>
+                <p>
+                    "향수는 냄새의 이야기이며, 때로는 기억의 시이기도 합니다." - 장 끌로드 엘레나<br>
+                    "Perfume is a story in odor, sometimes poetry in memory." - Jean Claude Ellena</p>
+
+                </p>
+                <div class="col-2"></div>
+            </div>
+            <!-- 베스트향수 -->
+            <!--여자향수-->
+            <div class="row" id="bestitem">
+                <div class="col-1"></div>
+                <div class="col-10" id="woman_best">
+                    <h2>Woman best</h2>
+                    <hr>
+                    <div>
+                        <a href="./goods/woman_perfume_detail.html">
+                            <img src="../img/perfume/woman_perfume_10.jpeg">
+                        </a>
+                        <span>입생로랑 리브르 오드빠르펭90ml<br>120,600원</span>
+                    </div>
+                    <div>
+                        <a href="./goods/woman_perfume_detail.html">
+                            <img src="../img/perfume/woman_perfume_3.jpeg">
+                        </a>
+                        <span>겔랑 오드뚜왈렛75ml<br>99,450원</span>
+                    </div>
+                    <div>
+                        <a href="./goods/woman_perfume_detail.html">
+                            <img src="../img/perfume/woman_perfume_5.jpeg">
+                        </a>
+                        <span>나르시소로드리게즈 퍼퓸30ml<br>49,900원</span>
+                    </div>
+                    <div>
+                        <a href="./goods/woman_perfume_detail.html">
+                            <img src="../img/perfume/woman_perfume_4.jpeg">
+                        </a>
+                        <span>바이레도 블랑쉬 오드퍼퓸 50ml<br>218,500원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <!--남자향수-->
+            <div class="row" id="bestitem">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div id="man_best">
+                        <h2>Man best</h2>
+                        <hr>
+                        <div>
+                            <a href="./goods/man_perfume_detail.html">
+                                <img src="../img/perfume/man_perfume_4.jpeg">
+                            </a>
+                            <br>
+                            <span>몽블랑 엠블럼 EDT 40ml<br>39,900원</span>
+                        </div>
+                        <div>
+                            <a href="./goods/man_perfume_detail.html">
+                                <img src="../img/perfume/man_perfume_2.jpeg">
+                            </a>
+                            <span>불가리 뿌르옴므 EDT 100ml<br>82,900원</span>
+                        </div>
+                        <div>
+                            <a href="./goods/man_perfume_detail.html">
+                                <img src="../img/perfume/man_perfume_7.jpeg">
+                            </a>
+                            <span>몽블랑 레전드 EDT 100ml<br>41,630원</span>
+                        </div>
+                        <div>
+                            <a href="./goods/man_perfume_detail.html">
+                                <img src="../img/perfume/man_perfume_12.jpeg">
+                            </a>
+                            <span>아프리모 미드나잇 50ml<br>68,900원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <!--메인끝-->
+    <!--Footer Area-->
+    <div class="row" id="footer">
+        <div class="col-12">
+            <hr>
+            <ul class="footer_area">
+                <div>
+                    <li>사이트 소개 : 향기를 담다</li>
+                    <li>회사명 : 무한 루프 | 대표 : 김정훈</li>
+                    <li>회사원(2조) : 김정훈, 송택민, 김희정, 박영서, 김상일</li>
+                    <li>사업자 등록번호 : 113-82-02144</li>
+                    <li>고객센터 :
+                        1588-1300, info@posa.or.kr<br>
+                        평일 09:00 ~18:00 / 토요일 09:00 ~ 13:00
+                    </li>
+                    <li>회사 주소 : 경기도 수원시 팔달구 덕영대로 905 아이메카빌딩 11층 1103호</li>
+            </ul>
+            <hr>
+        </div>
+    </div>
+    <!--Footer Area End-->
+    </div>
+</body>
+
+</html>

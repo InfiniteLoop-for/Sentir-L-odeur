@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/header.css">
+    <link type="text/css" rel="stylesheet" href="../../css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../../css/goods/perfume_woman.css">
+
+    <!--jquery 구버전 사용-->
+    <script type="text/javascript" src="../../jquery/jquery.js"></script>
+
+    <script type="text/javascript" src="../../js/header.js"></script>
+
+    <title>Sentir L'odeur</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="header">
+         <!--헤더시작-->
+         <div id="header">
+            <!--제목위 빈여백 div-->
+            <div class="row" id="blank_top">
+                <div class="col-12"></div>
+            </div>
+            <!--로고, 네비게이션, 아이콘 div-->
+            <div class="row" id="header_title">
+                <!--로고-->
+                <div class="col-4" id="logo">
+                    <a href="../index.html"><h1>Sentir L'odeur</h1></a>
+                </div>
+                <!--네비메뉴 3가지-->
+                <div class="col-4" id="header_nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item" id="nav1">
+                            <a class="nav-link" href="#">Perfume</a>
+                            <ul class="nav_hide">
+                                <li>
+                                    <a href="./man_perfume.html" id="man_c">Man</a>
+                                </li>
+                                <li>
+                                    <a href="./woman_perfume.html" id="woman_c">Woman</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../board/review.html">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../board/event.html">Event</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4" id="header_icon">
+                    <ul>
+                        <li class="icon1">
+                            <a href="../sign/signin.html" class="icon_margin">
+                                <img src="../../img/icon/header_login_icon.png" alt="로그인이미지">
+                            </a>
+                            <h5>login</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="../sign/my_page.html" class="icon_margin">
+                                <img src="../../img/icon/header_mypage_icon.png" alt="마이페이지 이미지">
+                            </a>
+                            <h5>mypage</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="../sign/cart.html" class="icon_margin">
+                                <img src="../../img/icon/header_cart_icon.png" alt="장바구니 이미지">
+                            </a>
+                            <h5>cart</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--여기까지 헤더-->
+        <div class="row" id="list">
+            <!--왼쪽 이미지 시작-->
+            <div class="col-1"></div>
+            <div class="col-5" >
+                <div id="img_box">
+                    <img src="../../img/perfume/woman_perfume_1.jpeg">
+                </div>
+            </div>
+            <!--왼쪽 끝 -->
+            <!--오른쪽 상세목록페이지 시작-->
+            <div class="col-5">
+                <div id="perfum_name">
+                <p>킬리안 엔젤스 셰어 50ml </p>
+                </div>
+                <div class="col">
+                    <ul class="list_box1">
+                        <li class ="li-1">상품명 :<span> 킬리안 엔젤스 셰어</span></li>
+                        <li class ="li-1">판매가 :<span> 270,000원</span></li>
+                        <li class ="li-1">적립금 :<span> 2,700원</span></li>
+                        <li class ="li-1">배송비 :<span> 1개당 4000원 </span></li>
+                    </ul>
+                    <ul class="list_box2">
+                        <li class ="li-2">용량 :
+                            <select>
+                                <option value="0">[필수] 옵션을 선택해 주세요.</option>
+                                <option value="1">50ml</option>
+                                <option value="2">[품절]100ml</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10" id="btn">
+                    <a href="#" class="btn_1">바로 구매하기</a>
+                    <a href="../sign/cart.html" class="btn_2">장바구니</a>
+                </div>
+
+                <!--금액칸-->
+                <div class="col">
+                    <div class="money_box">
+                        <select>
+                            <option value="1">[필수] 1개</option>
+                            <option value="2">[수량 부족]2개</option>
+                        </select>
+                        <span class="t_t">총 상품금액 : 270,000 원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <!--오른쪽 끝-->
+            <!--상세정보 시작-->
+            <div class="row">
+                <div class="col">
+                    <p> 상세정보</p>
+                    <div class="s_p">
+                        <ul class="s_p_ul">
+                            <li class="li-3">타입 :<span>스프레이</span></li>
+                            <li class="li-3">개당 용량 :<span>50ml, 100ml</span></li>
+                            <li class="li-3">농도 :<span>오드퍼퓸</span></li>
+                            <li class="li-3">원산지 :<span>프랑스</span></li>
+                            <li class="li-3">브랜드 :<span>킬리안</span></li>
+                            <li class="li-3">사용방법 :<span>맥박이 뛰는 곳에 뿌려줍니다.</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>판매자 공지사항</p>
+                        <div class="kilian">
+                            <img src="../../img/warning_event.jpeg">
+                        </div>
+                        <div class="img_p">
+                            <img src="../../img/long_detail_2.jpeg">
+
+                        </div>
+                        <div class="Top_btn">
+                            <a href="#"><button class="button">TOP</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Area-->
+        <div class="row" id="footer">
+            <div class="col-12">
+                <hr>
+                <ul class="footer_area">
+                    <li>사이트 소개 : 향기를 담다</li>
+                    <li>회사명 : 무한 루프 | 대표 : 김정훈</li>
+                    <li>회사원(2조) : 김정훈, 송택민, 김희정, 박영서, 김상일</li>
+                    <li>사업자 등록번호 : 113-82-02144</li>
+                    <li>고객센터 :
+                        1588-1300, info@posa.or.kr<br>
+                        평일 09:00 ~18:00 / 토요일 09:00 ~ 13:00
+                    </li>
+                    <li>회사 주소 : 경기도 수원시 팔달구 덕영대로 905 아이메카빌딩 11층 1103호</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <!--Footer Area End-->
+    </div>
+</body>
+
+</html>

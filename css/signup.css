@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@font-face {
+    font-family: 'THE오키도키';
+    src:url("../font/THEOkiDoki.ttf");
+}
+/*
+fon-family: 'THE오키도키t';
+font-family:'DX뮤지컬 L';
+font-family:'LAB라인워크';
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+font-family:  'Bad Script', cursive;
+*/
+#info {
+    margin-top:50px;
+}
+hr{
+    margin-top: 15px;
+    border-bottom: 3px solid #000;
+    
+}
+h1{
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+th{
+    border:1px solid #f2f2f2;
+    height: 60px;
+    width: 120px;
+    background-color: #f8f8f8;
+    
+}
+span{
+    color: red;
+}
+
+#th{
+    width: 111px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+   
+}
+
+
+td{
+    border: 2px solid #f2f2f2;
+    width: 880px;
+    height: 60px;
+
+}
+
+#td2{
+    width: 287px;
+    height: 35px;
+    display: inline-block;
+    
+}
+input{
+    margin-left: 7px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    width: 287px;
+    height: 30px;
+    border: solid #f2f2f2;
+    
+}
+#btn{
+    display: inline-block;
+    
+    background-color: white;
+    color: #000;
+    width: 100px;
+    height: 35px;
+    float: none;
+    margin-left: 20px;
+    border: 1px solid gray;
+}
+.MS_radio{
+    font-size: 3px;
+}
+#radio{
+    width: 20px;
+    height: 14px;
+}
+#btn2{
+    width: 250px;
+    height: 60px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background-color: #000;
+    color: white;
+}
+#btn3{
+    width: 250px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: white;
+    color: #000;
+    margin-bottom: 60px;
+}
+.psfs{
+    font-size: 11px;
+}

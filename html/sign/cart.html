@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/header.css">
+    <link type="text/css" rel="stylesheet" href="../../css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../../css/cart.css">
+
+    <!--jquery 구버전 사용-->
+    <script type="text/javascript" src="../../jquery/jquery.js"></script>
+
+    <script type="text/javascript" src="../../js/header.js"></script>
+    <script type="text/javascript" src="../../js/cart.js"></script>
+
+    <title>cart</title>
+
+</head>
+
+<body>
+    <div class="contaner-fluid">
+        <!--헤더시작-->
+        <div id="header">
+            <!--제목위 빈여백 div-->
+            <div class="row" id="blank_top">
+                <div class="col-12"></div>
+            </div>
+            <!--로고, 네비게이션, 아이콘 div-->
+            <div class="row" id="header_title">
+                <!--로고-->
+                <div class="col-4" id="logo">
+                    <a href="../index.html">
+                        <h1>Sentir L'odeur</h1>
+                    </a>
+                </div>
+                <!--네비메뉴 3가지-->
+                <div class="col-4" id="header_nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item" id="nav1">
+                            <a class="nav-link" href="#">Perfume</a>
+                            <ul class="nav_hide">
+                                <li>
+                                    <a href="../goods/man_perfume.html" id="man_c">Man</a>
+                                </li>
+                                <li>
+                                    <a href="../goods/woman_perfume.html" id="woman_c">Woman</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../board/review.html">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../board/event.html">Event</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4" id="header_icon">
+                    <ul>
+                        <li class="icon1">
+                            <a href="./signin.html" class="icon_margin">
+                                <img src="../../img/icon/header_login_icon.png" alt="로그인이미지">
+                            </a>
+                            <h5>login</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="./my_page.html" class="icon_margin">
+                                <img src="../../img/icon/header_mypage_icon.png" alt="마이페이지 이미지">
+                            </a>
+                            <h5>mypage</h5>
+                        </li>
+                        <li class="icon1">
+                            <a href="./cart.html" class="icon_margin">
+                                <img src="../../img/icon/header_cart_icon.png" alt="장바구니 이미지">
+                            </a>
+                            <h5>cart</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--여기까지 헤더-->
+        <!--장바구니 시작-->
+        <div class="row" id="cart_">
+            <div class="col-8 offset-2 py-5 my-5">
+                <h1>Cart</h1>
+            </div>
+            <div id="cart_title" style="margin-left: 290px;width: 1345px;">
+                <h2>총 2개의 상품</h2>
+                <hr>
+            </div>
+            <div class="main">
+                <div id="main1">
+                    <table>
+                        <tr id="tr">
+                            <th><input type="checkbox" checked class="neHeros cbox" value=""
+                                    onChange="allCheckedBox(this);" /></th>
+                            <th class="main2"> &nbsp;&nbsp;상품정보 </th>
+                            <th class="main3"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수량 </th>
+                            <th class="main4"> 상품금액 </th>
+                            <th class="main5"> 할인/적립 </th>
+                            <th class="main6"> 합계금액 </th>
+                            <th class="main7"> 배송비 </th>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr id="tr">
+                            <th><input type="checkbox" checked class="neHeros cbox" value="D"
+                                    onChange="eachCheckedBox(this);" /></th>
+                            <th class="main2"> <img src="../../img/perfume/man_perfume_10.jpeg" alt="">
+                                <p style="font-size: 15px;">몽블랑<br>레전드EDT향수</p>
+                            </th>
+                            <th class="main3"> 1개</th>
+                            <th class="main4"> 38,880원</th>
+                            <th class="main5"> <b><span>적립</span></b> 300p</th>
+                            <th class="main6"> 38,880원</th>
+                            <th class="main7"> 배송비<br>무료 </th>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr id="tr">
+                            <th><input type="checkbox" checked class="neHeros cbox" value="W"
+                                    onChange="eachCheckedBox(this);" /></th>
+                            <th class="main2"> <img src="../../img/perfume/woman_perfume_1.jpeg">
+                                <p style="font-size: 15px;">칼리안<br>엔젤스 셰어50ml</p>
+                            </th>
+                            <th class="main3"> 1개</th>
+                            <th class="main4"> 256,500원</th>
+                            <th class="main5"> <b><span>적립</span></b> 2500p</th>
+                            <th class="main6"> 295,380원</th>
+                            <th class="main7"> 배송비<br>무료 </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="main2">
+                    <div id="sub">
+                        <p id="p_head" style="font-size: 25px;">&emsp;&emsp;&emsp;총 2개의 상품금액</p>
+                        <br>
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;총 상품금액&nbsp;&nbsp; <b>&nbsp;&nbsp;&nbsp; 295,380원</b></p><br>
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;상품할인&nbsp;&nbsp;<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0원</b></p>
+                        <br>
+
+                        <p>&emsp;&emsp;&emsp;&emsp;&emsp;배송비&nbsp;&nbsp;<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0원</b></p>
+                        <br>
+                        <br>
+                        <hr>
+                        <b>
+                            <p style="font-size: 30px;">&emsp;&emsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;295,380원</p>
+                        </b>
+                        <button id="btn1">전체 상품 주문</button>
+                        <button id="btn2">선택 상품 주문</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--여기까지 장바구니-->
+        <!--Footer Area-->
+        <div class="row" id="footer">
+            <div class="col-12">
+                <hr>
+                <ul class="footer_area">
+                    <li>사이트 소개 : 향기를 담다</li>
+                    <li>회사명 : 무한 루프 | 대표 : 김정훈</li>
+                    <li>회사원(2조) : 김정훈, 송택민, 김희정, 박영서, 김상일</li>
+                    <li>사업자 등록번호 : 113-82-02144</li>
+                    <li>고객센터 :
+                        1588-1300, info@posa.or.kr<br>
+                        평일 09:00 ~18:00 / 토요일 09:00 ~ 13:00
+                    </li>
+                    <li>회사 주소 : 경기도 수원시 팔달구 덕영대로 905 아이메카빌딩 11층 1103호</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <!--Footer Area End-->
+    </div>
+</body>
+
+</html>
